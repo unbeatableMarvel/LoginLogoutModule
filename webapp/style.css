@@ -1,0 +1,35 @@
+.logo {
+    display: inline-block;
+    padding: 21px;
+    border: 8px solid white;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 8px;
+    text-shadow: none;
+    margin-top:10px;
+}
+
+#form {
+    width: 60%;
+    margin: 4em auto 1em;
+    padding: 2em 2em 3em;
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+
+.rounded {
+    width: 80%;
+    height: 50px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    padding-left: 20px
+}
+.link
+{
+    text-align: center;
+    color: white;
+}
+
+body {
+    background-color: #424242;
+}

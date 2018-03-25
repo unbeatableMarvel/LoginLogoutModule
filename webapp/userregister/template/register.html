@@ -1,0 +1,37 @@
+<div layout="row" layout-align="center center" flex>
+    <form name="signupForm" id="form" flex flex-sm="66" flex-md="66" flex-gt-md="50">
+        <div layout="row" layout-align="center center">
+            <h3 class="logo">Registration</h3>
+        </div>
+        <div layout="row" layout-align="center center">
+            <input class="rounded" type="text" required md-no-asterisk ng-model="register.user.name" name="name" placeholder="Enter your name">
+        </div>
+        <div layout="row" layout-align="center center">
+            <input class="rounded" type="tel" name="number" required md-no-asterisk ng-model="register.user.number" placeholder="Enter your telephone number">
+        </div>
+        <div layout="row" layout-align="center center">
+            <input class="rounded" type="email" name="email" required md-no-asterisk ng-model="register.user.email" placeholder="Enter your email id">
+        </div>
+        <div layout="row" layout-align="center center">
+            <input class="rounded" type="text" name="Location" required md-no-asterisk ng-model="register.user.location" placeholder="Enter your loaction">
+        </div>
+        <div layout="row" layout-align="center center">
+            
+            <input ng-model="register.user.password" class="rounded" type="password" name="password" required md-no-asterisk ng-required="true" minlength="8" maxlength="20" placeholder="Enter your password">
+        </div>
+        <div layout="row" layout-align="center center">
+            <input ng-model="register.user.cfwd" class="rounded" type="password" required md-no-asterisk name="Cfpassword" placeholder="Confirm your password">
+        </div>
+        <flash-message duration="6000"></flash-message>
+        <div layout="row" layout-align="center center">
+            <div layout="row" layout-align="center center" layout-wrap flex flex-gt-sm="40">
+                <md-button  type="submit" class="md-raised md-primary" ng-click="register.register()">Sign Up
+                </md-button>
+            </div>
+        </div>
+        <div class="clearfix"> </div>
+        <div layout="row" layout-align="center center">
+            <a class="link" flex ui-sref="user.login">Have an Account ? signIn</a>
+        </div>
+    </form>
+</div>

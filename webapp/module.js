@@ -1,0 +1,1 @@
+angular.module('chatting',['ui.router','ngMaterial','ngMessages','satellizer','ngFlash']);

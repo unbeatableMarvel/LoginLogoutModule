@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="chatting">
+
+<head>
+    <title>Chatting app</title>
+    <!--Angular material style sheet-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=no">
+    <link href="/angular-material/angular-material.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body ng-cloak>
+    <div layout="column" flex="grow" layout-fill>
+        <div flex="noshrink" flex="100">
+            <div layout="row">
+                <div ui-view="content" class="maincontent" flex="100" flex-sm="100" flex-xs="100"></div>
+            </div>
+        </div>
+        <div ui-view="footer"></div>
+    </div>
+</body>
+<script type="text/javascript" src="/angular/angular.min.js"></script>
+<script type="text/javascript" src="/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script type="text/javascript" src="/angular-messages/angular-messages.min.js"></script>
+<script type="text/javascript" src="/angular-animate/angular-animate.min.js"></script>
+<script type="text/javascript" src="/angular-aria/angular-aria.min.js"></script>
+<script type="text/javascript" src="/angular-material/angular-material.min.js"></script>
+<script src="/satellizer/dist/satellizer.js"></script>
+<script src="/angular-flash-alert/dist/angular-flash.js"></script>
+<script type="text/javascript" src="module.js"></script>
+<script type="text/javascript" src="applayout/config/config.js"></script>
+<script type="text/javascript" src="userdashboard/configdash.js"></script>
+<script type="text/javascript" src="/userdashboard/controller/dashboardctrl.js"></script>
+<script src="auth/authmodule.js"></script>
+<script type="text/javascript" src="/userlogin/controller/loginctrl.js"></script>
+<script type="text/javascript" src="/userregister/controller/registerctrl.js"></script>
+
+</html>
